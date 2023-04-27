@@ -1,6 +1,7 @@
 setInterval(()=>{
     const time = document.querySelector('#time');
     let date = new Date();
+
     let hourse = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
@@ -8,7 +9,6 @@ setInterval(()=>{
 
     if(hourse > 12){
         daytime = "PM";
-        //hourse = hourse - 12;
     }
 
     if(hourse < 10){
